@@ -1,0 +1,182 @@
+/* General Styles */
+
+body {
+
+  font-family: Arial, sans-serif;
+  /* background-color: #000; */
+  background-image: url(Untitled\ design.png);
+  color: #9acd32;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  margin-top: -10;
+  
+  
+}
+
+.logo {
+  /* font-size: 24px;
+  font-weight: bold;
+  color: #9acd32; */
+  background-image: url(aa.jpg);
+}
+
+.navbar nav {
+  display: flex;
+}
+
+.nav-btn {
+  color: #9acd32;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border: 2px solid #9acd32;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #9acd32;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Section Styles */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #9acd32;
+  
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url(images.jpg);
+  margin-left: 600px;
+}
+.abt{
+  width: 800px;
+  margin-left: 600px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.title {
+  font-size: 60px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-top: 10px;
+  animation: jump 2s ease-in-out infinite;
+}
+/* Basic styling for the grid */
+.projects-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 50px;
+  justify-items: center;
+}
+
+/* Styling for individual project items */
+.project-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  cursor: pointer;
+}
+
+/* Zoom effect when clicked (scaled) */
+.project-item img.zoomed {
+  transform: scale(1.5); /* Adjust the scale as needed */
+}
+
+/* Optional: Adding a nice shadow effect when zooming */
+.project-item img.zoomed {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #9acd32;
+  background-color: #222;
+  color: #9acd32;
+  border-radius: 5px;
+}
+
+.contact-btn {
+  padding: 10px;
+  border: none;
+  color: #000;
+  background-color: #9acd32;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
